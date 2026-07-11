@@ -1,3 +1,16 @@
+## 安装
+### 安装插件
+
+```
+:PlugInstall
+```
+
+### 安装ctags
+
+``` bash
+sudo apt install universal-ctags
+```
+
 ## 目录(Dirvish)
 ### 1.直接使用 :Dirvish 命令
 | 命令 | 作用 |

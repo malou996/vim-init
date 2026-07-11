@@ -472,6 +472,9 @@ if index(g:bundle_group, 'leaderf') >= 0
 		" 禁用 function/buftag 的预览功能，可以手动用 p 预览
 		let g:Lf_PreviewResult = {'Function':0, 'BufTag':0}
 
+		" 系统未安装 GNU global，关闭 LeaderF 保存时自动更新 gtags，避免无谓调用/报错
+		let g:Lf_GtagsAutoUpdate = 0
+
 		" 使用 ESC 键可以直接退出 leaderf 的 normal 模式
 		let g:Lf_NormalMap = {
 				\ "File":   [["<ESC>", ':exec g:Lf_py "fileExplManager.quit()"<CR>']],
